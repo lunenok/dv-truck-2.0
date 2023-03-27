@@ -7,6 +7,56 @@
     <title>dv truck</title>
     <link href="css/style.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="page">
+    <header class="header__container">
+        <div class="header__wrapper">
+            <img class="header__logo" src="./img/logo.png" width="156" height="40" alt="logo">
+            <button class="header__button"></button>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <div class="header__menu-list-container">
+                        <li class="header__item">Доставка</li>
+                        <li class="header__item">О нас</li>
+                        <li class="header__item">Контакты</li>
+                        <li class="header__item">Отследить заказ</li>
+                    </div>
+                    <div class="header__menu-button-container">
+                        <li class="header__item header__item--button">Оставить заявку</li>
+                    </div>
+                </ul>
+                <ul class="header__contacts-list">
+                    <li class="header__contacts-item header__contacts-item--email">
+                        <a href="mailto:info@dolcevita-flowers.com">info@dolcevita-flowers.com</a>
+                    </li>
+                    <li class="header__contacts-item header__contacts-item--phone">
+                        <a href="tel:+79193828619">+7 919 382 8619</a>
+                    </li>
+                    <li class="header__contacts-item">
+                        Адрес: г. Екатеринбург, ул. Карьерная, 24, оф. 5 
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="promo__container">
+            <h1 class="title visually-hidden">Dolce Vita truck международная доставка цветов</h1>
+            <div class="promo__wrapper">
+                <div class="promo__about-container">
+                    <h2 class="promo__title">Доставляем цветы бережно и быстро</h2>
+                    <span class="promo__desc">
+                        Из Голландии, Эквадора, Колумбии, Кении, Израиля
+                    </span>
+                    <button class="promo__button">Рассчитать стоимость</button>
+                </div>
+                <div class="promo__pic-container"></div>
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./img/promo-man-desktop.png">
+                    <img class="promo__pic" src="./img/promo-man-mobile.png" width="320" height="320" alt="promo man">
+                </picture>
+                
+            </div>
+        </section>
+    </main>
 </body>
 </html>

@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/rubik-400.woff2") format("woff2"), url("../fonts/rubik-400.woff") format("woff");
+    font-weight: 400;
+  }
+  
+@font-face {
+    font-family: "Rubik";
+    src: url("../fonts/rubik-500.woff2") format("woff2"), url("../fonts/rubik-500.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    src: url("../fonts/gilroy-700.woff2") format("woff2"), url("../fonts/gilroy-700.woff") format("woff");
+    font-weight: 700;
+}
+
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+.page {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    min-width: 320px;
+    max-width: 1920px;
+    font-family: "Rubik", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 120%;
+    font-weight: 400;
+}
+  
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
