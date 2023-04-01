@@ -2,6 +2,7 @@
 
 .promo__wrapper {
     padding-top: 80px;
+    margin-bottom: 118px;
     background: linear-gradient(79.63deg, #16153A 1.08%, #7E488C 100%);
 
     @media (min-width: $sm-resolution) {
@@ -11,6 +12,7 @@
         padding: 0 8%;
         padding-top: 70px;
         margin: 0 3%;
+        margin-bottom: 100px;
         border-radius: 22px;
     }
     @media (min-width: $md-resolution) {
@@ -18,9 +20,11 @@
         padding: 0 6%;
         padding-top: 105px;
         margin: 0 4%;
+        margin-bottom: 130px;
         border-radius: 30px;
     }
     @media (min-width: $lg-resolution) {
+        margin-bottom: 160px;
         padding-top: 140px;
     }
 }

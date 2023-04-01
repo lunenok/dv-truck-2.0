@@ -2,6 +2,7 @@ $white: #FFFFFF;
 $black: #1F1F1F;
 $purple-dark: #432950;
 $purple-regular: #764E80;
+$grey: #F9F9F9;
 $lite-gradient: linear-gradient(92.6deg, #FFFFFF -0.09%, #FFFFFF -0.08%, #FFFFFF -0.07%, #FFFFFF -0.07%, #F2E2FF 95.95%);
 
 $sm-resolution: 768px;
@@ -14,7 +15,7 @@ $xl-resoluiton: 1920px;
     align-items: center;
     justify-content: center;
     padding: 20px 40px;
-    width: 320px;
+    // width: 320px;
     background-color: $lite-gradient;
     color: $black;
     font-family: 'Rubik', 'Arial', sans-serif;
