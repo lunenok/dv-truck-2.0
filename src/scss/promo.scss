@@ -3,7 +3,7 @@
 .promo__wrapper {
     padding-top: 80px;
     margin-bottom: 118px;
-    background: linear-gradient(79.63deg, #16153A 1.08%, #7E488C 100%);
+    background: $linear-purple;
 
     @media (min-width: $sm-resolution) {
         display: flex;

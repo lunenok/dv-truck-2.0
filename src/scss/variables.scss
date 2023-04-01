@@ -4,6 +4,7 @@ $purple-dark: #432950;
 $purple-regular: #764E80;
 $grey: #F9F9F9;
 $lite-gradient: linear-gradient(92.6deg, #FFFFFF -0.09%, #FFFFFF -0.08%, #FFFFFF -0.07%, #FFFFFF -0.07%, #F2E2FF 95.95%);
+$linear-purple: linear-gradient(79.63deg, #16153A 1.08%, #7E488C 100%);
 
 $sm-resolution: 768px;
 $md-resolution: 992px;
@@ -22,4 +23,36 @@ $xl-resoluiton: 1920px;
     font-weight: 500;
     border: none;
     border-radius: 10px;
+}
+
+@mixin subtitle {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 110%;
+    text-align: center;
+    color: $black;
+    @media (min-width: $md-resolution) {
+        font-size: 34px;
+    }
+    @media (min-width: $lg-resolution) {
+        font-size: 44px;
+    }
+}
+
+@mixin body {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    @media (min-width: $md-resolution) {
+        font-size: 16px;
+    }
+    @media (min-width: $lg-resolution) {
+        font-size: 16px;
+    }
 }

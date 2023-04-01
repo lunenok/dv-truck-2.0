@@ -2,6 +2,7 @@
 
 .services__wrapper {
     padding: 0 5%;
+    margin-bottom: 100px;
     @media (min-width: $sm-resolution) {
         padding: 0 3%;
     }
@@ -13,19 +14,9 @@
 .services__title {
     margin: 0 auto;
     margin-bottom: 40px;
-    font-family: 'Gilroy';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 110%;
-    text-align: center;
+    @include subtitle();
     @media (min-width: $md-resolution) {
         margin-bottom: 64px;
-        font-size: 34px;
-        line-height: 110%;
-    }
-    @media (min-width: $lg-resolution) {
-        font-size: 44px;
     }
 }
 
@@ -34,6 +25,9 @@
     flex-wrap: wrap;
     margin: 0 auto;
     margin-bottom: 40px;
+    @media (min-width: $lg-resolution) {
+        margin-bottom: 64px;
+    }
     @media (min-width: $xl-resoluiton) {
         max-width: 1324px;
     }
