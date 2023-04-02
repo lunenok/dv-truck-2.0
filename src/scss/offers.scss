@@ -1,0 +1,109 @@
+@import './variables.scss';
+
+.offers__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 80px 5%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    background: $linear-purple;
+    @media (min-width: $sm-resolution) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 3%;
+        margin-bottom: 100px;
+        padding: 85px 0;
+        border-radius: 30px
+    }
+    @media (min-width: $md-resolution) {
+        margin: 0 4%;
+        margin-bottom: 160px;
+        padding: 60px 0;
+    }
+    @media (min-width: $lg-resolution) {
+        margin: 0 auto;
+        margin-bottom: 160px;
+        max-width: 1324px;
+    }
+    @media (min-width: $xl-resoluiton) {
+        max-width: 1560px;
+    }
+}
+
+.offers__main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    @media (min-width: $sm-resolution) {
+        order: 2;
+        flex: 45%;
+        flex-grow: 0;
+        margin-right: auto;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    @media (min-width: $lg-resolution) {
+        flex: 42%;
+        flex-grow: 0;
+    }
+}
+
+.offers__title {
+    @include subtitle();
+    margin-bottom: 24px;
+    max-width: 100%;
+    color: $white;
+    @media (min-width: $sm-resolution) {
+        text-align: left;
+        max-width: 100%;
+    }
+}
+
+.offers__description {
+    @include body();
+    margin-bottom: 24px;
+    width: 90%;
+    color: $white;
+    @media (min-width: $sm-resolution) {
+        text-align: left;
+        max-width: 100%;
+    }
+}
+
+.offers__button {
+    @include button();
+    width: 89%;
+    max-width: 320px;
+    @media (min-width: $sm-resolution) {
+        text-align: left;
+        max-width: 213px;
+    }
+}
+
+.offers__img-container {
+    display: flex;
+    justify-content: center;
+    @media (min-width: $sm-resolution) {
+        flex: 33%;
+        flex-grow: 0;
+        justify-content: end;
+        margin-right: 7%;
+        margin-left: auto;
+        order: 1;
+    }
+    @media (min-width: $lg-resolution) {
+        flex: 20%;
+        flex-grow: 0;
+        margin-right: 5%;
+    }
+    @media (min-width: $lg-resolution) {
+        margin-right: 4%;
+    }
+}
+
+.offerg__img {
+    width: 270px;
+    height: 270px;
+}

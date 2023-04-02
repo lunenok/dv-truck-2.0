@@ -1,0 +1,87 @@
+@import './variables.scss';
+
+.partners__wrapper {
+    @include container-padding()
+}
+
+.partners__title {
+    @include subtitle();
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 210px;
+}
+
+.partners__description {
+    @include body();
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    max-width: 310px;
+    opacity: 0.6;
+}
+
+.partners__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    min-width: 280px;
+    @media (min-width: $lg-resolution) {
+        flex: 25%;
+        max-width: 900px;
+    }
+}
+
+.partners__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    flex: 50%;
+    height: 56px;
+    @media (min-width: $sm-resolution) {
+        flex: 25%;
+        margin-bottom: 40px;
+    }
+    @media (min-width: $lg-resolution) {
+        flex: 25%;
+        margin-bottom: 50px;
+    }
+}
+
+.partners__img {
+    @media (min-width: $lg-resolution) {
+        &--logiztic {
+            width: 195px;
+            height: 42px;
+        }
+        &--enigma {
+            width: 96px;
+            height: 56px;
+        }
+        &--florica {
+            width: 222px;
+            height: 34px;
+        }
+        &--zeester {
+            width: 150px;
+            height: 42px;
+        }
+        &--ozexport {
+            width: 127px;
+            height: 60px;
+        }
+        &--van {
+            width: 202px;
+            height: 60px;
+        }
+        &--iphandlers {
+            width: 180px;
+            height: 42px;
+        }
+        &--astra {
+            width: 151px;
+            height: 64px;
+        }
+    }
+}
