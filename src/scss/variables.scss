@@ -16,13 +16,22 @@ $xl-resoluiton: 1920px;
     align-items: center;
     justify-content: center;
     padding: 20px 40px;
-    // width: 320px;
     background-color: $lite-gradient;
     color: $black;
     font-family: 'Rubik', 'Arial', sans-serif;
     font-weight: 500;
     border: none;
     border-radius: 10px;
+}
+
+@mixin container-padding {
+    padding: 0 5%;
+    @media (min-width: $sm-resolution) {
+        padding: 0 3%;
+    }
+    @media (min-width: $md-resolution) {
+        padding: 0 4%;
+    }
 }
 
 @mixin subtitle {

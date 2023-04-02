@@ -1,0 +1,107 @@
+@import './variables.scss';
+
+.help__container {
+    @media (min-width: $sm-resolution) {
+        padding: 0 3%;
+    }
+    @media (min-width: $lg-resolution) {
+        padding: 0 4%;
+    }
+}
+
+.help__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 80px 5%;
+    background: linear-gradient(79.63deg, #16153A 1.08%, #7E488C 100%);
+    @media (min-width: $sm-resolution) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px 8%;
+        border-radius: 30px;
+    }
+    @media (min-width: $lg-resolution) {
+        padding: 68px 17%;
+    }
+    @media (min-width: $xl-resoluiton) {
+        max-width: 1560px;
+        padding: 68px 17%;
+    }
+}
+
+.help__description-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    @media (min-width: $sm-resolution) {
+        order: 2;
+        margin-bottom: 0;
+    }
+}
+
+.help__title {
+    @include subtitle();
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 320px;
+    color: $white;
+    @media (min-width: $sm-resolution) {
+        margin-left: 0;
+        width: 270px;
+        text-align: left;
+    }
+    @media (min-width: $md-resolution) {
+        width: 385px;
+    }
+    @media (min-width: $lg-resolution) {
+        width: 540px;
+        text-align: left;
+    }
+}
+
+.help__description {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 320px;
+    @include body();
+    color: $white;
+    @media (min-width: $sm-resolution) {
+        margin-left: 0;
+        width: 310px;
+        text-align: left;
+    }
+    @media (min-width: $md-resolution) {
+        margin-botton: 32px;
+        width: 385px;
+    }
+    @media (min-width: $lg-resolution) {
+        width: 540px;
+    }
+}
+
+.help__button {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 320px;
+    @include button();
+}
+
+.help__img-container {
+    @media (min-width: $sm-resolution) {
+        order: 1;
+    }
+}
+
+.help__img {
+    display: block;
+    margin: 0 auto;
+    @media (min-width: $lg-resolution) {
+        width: 267px;
+        height: 264px;
+    }
+}
