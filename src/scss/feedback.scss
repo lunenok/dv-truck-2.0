@@ -1,0 +1,82 @@
+@import './variables.scss';
+
+.feedback__wrapper {
+    padding-top: 80px;
+    background: $linear-purple;
+    @media (min-width: $sm-resolution) {
+        display: flex;
+        margin: 0 3%;
+        border-radius: 30px;
+    }
+}
+
+.feedback__title {
+    @include subtitle();
+    margin-bottom: 8px;
+    color: $white;
+}
+
+.feedback__description {
+    @include body();
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    width: 65%;
+    color: $white;
+}
+
+.feedback__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback__input {
+    margin: 0 auto;
+    margin-bottom: 16px;
+    padding: 0 18px;
+    width: 89%;
+    height: 47px;
+    border: none;
+    border-radius: 10px;
+
+}
+
+.feedback__button {
+    @include button();
+    align-self: flex-start;
+    margin-left: 5.5%;
+    margin-bottom: 16px;
+    width: 89%;
+    height: 47px;
+    max-width: 320px;
+    background-color: $purple-regular;
+    color: $white;
+}
+
+.feedback__label {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 89%;
+    color: $white;
+    opacity: 0.6;
+    a {
+        color: $white;
+        text-decoration: none;
+        opacity: 1.0;
+    }
+}
+
+.feedback__terms {
+    margin: 0;
+    margin-right: 8px;
+}
+
+.feedback__img-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.feedback__img {
+    margin-bottom: -80px;
+}
