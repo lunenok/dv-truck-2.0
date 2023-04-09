@@ -56,3 +56,14 @@ ul {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+.hystmodal__opened {
+    position: fixed;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    @media (min-width: 992px) {
+        position: static;
+        overflow: visible;
+    }
+}

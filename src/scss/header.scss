@@ -47,21 +47,36 @@
     }
 }
 
+@keyframes open {
+    0% { 
+        opacity: 0; 
+        transform: translateY(-75px);
+    }
+    100% { 
+        opacity: 1; 
+        transform: translateY(0px);
+    }
+}
+
+.header__nav--open {
+    display: block;
+    animation-name: open;
+    animation-duration: 0.5s;
+}
+
+.header__nav--close {
+    display: none;
+    transition: top 0.4s, opacity 0.4s;
+    @media (min-width: $md-resolution) {
+        display: flex;
+    }
+}
+
 .header__list {
     position: relative;
     margin: 0;
     padding: 0;
     list-style: none;
-    // &::after {
-    //     position: absolute;
-    //     content: "";
-    //     display: block;
-    //     bottom: 0;
-    //     left: 0;
-    //     height: 1px;
-    //     width: 100vh;
-    //     background-color: $black;
-    // }
     @media (min-width: $md-resolution) {
         display: flex;
         width: 100%;

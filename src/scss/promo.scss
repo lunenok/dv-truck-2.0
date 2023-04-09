@@ -1,7 +1,7 @@
 @import 'variables.scss';
 
 .promo__wrapper {
-    margin-bottom: 118px;
+    margin-bottom: 132px;
     padding-top: 80px;
     background: $linear-purple;
 
@@ -36,10 +36,10 @@
 
 .promo__title {
     margin: 0  auto;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     font-family: 'Gilroy', 'Arial', sans-serif;
     text-align: center;
-    width: 255px;
+    width: 79%;
     font-weight: 700;
     font-size: 32px;
     line-height: 110%;
@@ -65,7 +65,7 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 24px;
-    width: 255px;
+    width: 83%;
     font-family: 'Rubik', 'Arial', sans-serif;
     text-align: center;
     font-style: normal;
@@ -91,7 +91,7 @@
 .promo__button {
     @include button();
     margin: 0 auto;
-    margin-bottom: 65px;
+    margin-bottom: 14px;
     width: 88%;
     max-width: 320px;
     background: $lite-gradient;
@@ -115,8 +115,8 @@
 .promo__pic {
     display: block;
     margin: 0 auto;
-    width: 240px;
-    height: 240px;
+    width: 89%;
+    height: auto;
     transform: translateY(50px);
     @media (min-width: $sm-resolution) {
         margin: 0;

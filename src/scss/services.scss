@@ -12,9 +12,9 @@
 }
 
 .services__title {
-    margin: 0 auto;
-    margin-bottom: 40px;
     @include subtitle();
+    margin: 0 auto;
+    margin-bottom: 38px;
     @media (min-width: $md-resolution) {
         margin-bottom: 64px;
     }
@@ -79,7 +79,7 @@
         &::before {
             position: absolute;
             content: '';
-            top: -58px;
+            top: -50px;
             width: 40px;
             height: 40px;
             background-image: url('./../img/services1.svg');
