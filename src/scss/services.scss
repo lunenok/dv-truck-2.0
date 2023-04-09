@@ -199,6 +199,9 @@
     max-width: 320px;
     background-color: $purple-regular;
     color: $white;
+    &:hover, &:focus {
+        background: $purple-dark;
+    }
     @media (min-width: $lg-resolution) {
         max-width: 297px;
     }
