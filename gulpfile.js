@@ -9,14 +9,14 @@ exports.watch = tasks.watch;
 exports.rastr = tasks.rastr;
 exports.webp = tasks.webp;
 exports.font = tasks.font;
-exports.script = tasks.script;
+exports.dev_js = tasks.dev_js;
 
 exports.default = gulp.parallel(
 	exports.style,
     exports.font,
     exports.rastr,
     exports.webp,
-    exports.script,
+    exports.dev_js,
 	exports.html,
 	exports.bs_html,
     exports.watch

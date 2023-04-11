@@ -8,63 +8,6 @@
     <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="page">
-    <div class="modal__container">
-        <div class="modal__wrapper">
-            <button class="modal__close-button"></button>
-            <h2 class="modal__title">Рассчитать стоимость</h2>
-            <form class="modal__form">
-                <span class="modal__description">Выберите страну отправки</span>
-                <div class="modal__checkbox-container">
-                    <label class="modal__checkbox-label">
-                        <input class="modal__checkbox" type="checkbox">
-                        Израиль
-                    </label>
-                    <label class="modal__checkbox-label">
-                        <input class="modal__checkbox" type="checkbox">
-                        Колумбия
-                    </label>
-                    <label class="modal__checkbox-label">
-                        <input class="modal__checkbox" type="checkbox">
-                        Кения
-                    </label>
-                    <label class="modal__checkbox-label">
-                        <input class="modal__checkbox" type="checkbox">
-                        Эквадор
-                    </label>
-                    <label class="modal__checkbox-label">
-                        <input class="modal__checkbox" type="checkbox">
-                        Нидерланды
-                    </label>
-                </div>
-                <span class="modal__description">Выберите город прибытия</span>
-                <input class="modal__input modal__input--city" list="cities" type="text" placeholder="Город">
-                <span class="modal__description">Выберите тип груза</span>
-                <input class="modal__input modal__input--cargo" list="cargo" type="text" placeholder="Груз">
-                <span class="modal__description">Личная информация</span>
-                <input class="modal__input modal__input--name" type="text" placeholder="Имя">
-                <input class="modal__input modal__input--phone" type="tel" placeholder="Телефон">
-                <input class="modal__input modal__input--mail" type="email" placeholder="E-mail">
-                <button class="modal__button" type="submit">Отправить заявку на расчет</button>
-                <datalist id="cities">
-                    <option value="Тюмень">
-                    <option value="Омск">
-                    <option value="Челябинск">
-                    <option value="Екатеринбург">
-                    <option value="Нижний Тагил">
-                    <option value="Курган">
-                    <option value="Сургут">
-                    <option value="другой">
-                </datalist>
-                <datalist id="cargo">
-                    <option value="P 100">
-                    <option value="P 160">
-                    <option value="LV 75 BB, C, LV5 ">
-                </datalist>
-
-                
-            </form>
-        </div>
-    </div>
     <header class="header__container">
         <div class="header__wrapper">
             <img class="header__logo" src="./img/logo.png" width="156" height="40" alt="logo">
@@ -362,6 +305,62 @@
             </div>
         </div>
     </footer>
-    <script src="./main.js"></script>
+    <div class="modal__container">
+        <div class="modal__wrapper">
+            <button class="modal__close-button"></button>
+            <h2 class="modal__title">Рассчитать стоимость</h2>
+            <form class="modal__form" id="popup-form" method="post">
+                <span class="modal__description">Выберите страну отправки</span>
+                <div class="modal__checkbox-container">
+                    <label class="modal__checkbox-label">
+                        <input class="modal__checkbox" name="israel" type="checkbox">
+                        Израиль
+                    </label>
+                    <label class="modal__checkbox-label">
+                        <input class="modal__checkbox" name="colombia" type="checkbox">
+                        Колумбия
+                    </label>
+                    <label class="modal__checkbox-label">
+                        <input class="modal__checkbox" name="kenya" type="checkbox">
+                        Кения
+                    </label>
+                    <label class="modal__checkbox-label">
+                        <input class="modal__checkbox" name="ecuador" type="checkbox">
+                        Эквадор
+                    </label>
+                    <label class="modal__checkbox-label">
+                        <input class="modal__checkbox" name="netherlands" name="city" type="checkbox">
+                        Нидерланды
+                    </label>
+                </div>
+                <span class="modal__description">Выберите город прибытия</span>
+                <input class="modal__input modal__input--city" name="city" list="cities" type="text" placeholder="Город">
+                <span class="modal__description">Выберите тип груза</span>
+                <input class="modal__input modal__input--cargo" name="cargo" list="cargo" type="text" placeholder="Груз">
+                <span class="modal__description">Личная информация</span>
+                <input class="modal__input modal__input--name" name="name" type="text" placeholder="Имя">
+                <input class="modal__input modal__input--phone" name="tel" type="tel" placeholder="Телефон">
+                <input class="modal__input modal__input--mail" name="email" type="email" placeholder="E-mail">
+                <button class="modal__button" type="submit">Отправить заявку на расчет</button>
+                <datalist id="cities">
+                    <option value="Тюмень">
+                    <option value="Омск">
+                    <option value="Челябинск">
+                    <option value="Екатеринбург">
+                    <option value="Нижний Тагил">
+                    <option value="Курган">
+                    <option value="Сургут">
+                    <option value="другой">
+                </datalist>
+                <datalist id="cargo">
+                    <option value="P 100">
+                    <option value="P 160">
+                    <option value="LV 75 BB, C, LV5 ">
+                </datalist>
+            </form>
+        </div>
+    </div>
+    <div class="modal__shadow"></div>
+    <script src="./main.min.js"></script>
 </body>
 </html>
