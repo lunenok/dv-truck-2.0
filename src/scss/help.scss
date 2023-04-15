@@ -14,7 +14,6 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    margin-bottom: 100px;
     padding: 80px 5%;
     background: linear-gradient(79.63deg, #16153A 1.08%, #7E488C 100%);
     @media (min-width: $sm-resolution) {
@@ -32,6 +31,7 @@
         max-width: 1560px;
         padding: 68px 17%;
     }
+    @include wrapper-margin-bottom()
 }
 
 .help__description-container {

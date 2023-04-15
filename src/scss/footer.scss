@@ -26,6 +26,12 @@
 
 .footer__socials-item {
     margin-right: 16px;
+
+    img {
+        &:hover, &:focus {
+            opacity: 0.8;
+        }
+    }
 }
 
 .footer__nav-container {
@@ -60,11 +66,15 @@
     margin-left: 6px;
     color: $black;
     text-decoration: none;
+    &:hover, &:focus {
+        opacity: 0.8;
+    }
 }
 
 .footer__description {
     @include body();
     position: relative;
+    margin-bottom: 14px;
     text-align: left;
     opacity: 0.6;
     &::before {
@@ -81,6 +91,10 @@
     @media (min-width: $sm-resolution) {
         width: 100%;
         margin: 0 auto;
+        margin-bottom: 24px;
         text-align: center;
+    }
+    @media (min-width: $lg-resolution) {
+        margin-bottom: 46px;
     }
 }

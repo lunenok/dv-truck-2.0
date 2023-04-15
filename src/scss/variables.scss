@@ -36,6 +36,19 @@ $xl-resoluiton: 1920px;
     }
 }
 
+@mixin wrapper-margin-bottom {
+    margin-bottom: 60px;
+    @media (min-width: $sm-resolution) {
+        margin-bottom: 100px;
+    }
+    @media (min-width: $md-resolution) {
+        margin-bottom: 130px;
+    }
+    @media (min-width: $lg-resolution) {
+        margin-bottom: 160px;
+    }
+}
+
 @mixin subtitle {
     margin: 0;
     font-family: 'Gilroy';

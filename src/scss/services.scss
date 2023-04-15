@@ -9,6 +9,7 @@
     @media (min-width: $md-resolution) {
         padding: 0 4%;
     }
+    @include wrapper-margin-bottom()
 }
 
 .services__title {

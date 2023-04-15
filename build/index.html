@@ -21,7 +21,9 @@
                         <li class="header__item">Отследить заказ</li>
                     </div>
                     <div class="header__menu-button-container">
-                        <li class="header__item header__item--button">Оставить заявку</li>
+                        <li class="header__item header__item--button">
+                            <button class="header__button--request">Оставить заявку</button>
+                        </li>
                     </div>
                 </ul>
                 <ul class="header__contacts-list">
@@ -29,7 +31,7 @@
                         <a href="mailto:info@dolcevita-flowers.com">info@dolcevita-flowers.com</a>
                     </li>
                     <li class="header__contacts-item header__contacts-item--phone">
-                        <a href="tel:+79193828619">+7 919 382 8619</a>
+                        <a href="tel:+79193828619">+7 912 691 6662</a>
                     </li>
                     <li class="header__contacts-item">
                         Адрес: г. Екатеринбург, ул. Карьерная, 24, оф. 5 
@@ -229,12 +231,12 @@
                         Оставьте заявку и мы перезвоним!
                     </span>
                     <form class="feedback__form" action="submit">
-                        <input class="feedback__input feedback__input--name" type="text" placeholder="Имя">
-                        <input class="feedback__input feedback__input--phone" type="tel" placeholder="Телефон">
-                        <input class="feedback__input feedback__input--mail" type="email" placeholder="E-mail">
+                        <input class="feedback__input feedback__input--name" type="text" placeholder="Имя" maxlength="50" required>
+                        <input class="feedback__input feedback__input--phone" type="tel" placeholder="Телефон" maxlength="20" pattern="\+?[0-9\s\-\(\)]+" required>
+                        <input class="feedback__input feedback__input--mail" type="email" placeholder="E-mail" maxlength="50">
                         <button class="feedback__button">Отправить</button>
                         <label class="feedback__label">
-                            <input type="checkbox" class="feedback__terms">
+                            <input type="checkbox" class="feedback__terms" required>
                             Соглашаюсь с <a href="#">условиями передачи данных</a>
                         </label>
                     </form>
@@ -256,14 +258,9 @@
                 <img src="./img/logo.png" alt="logo" class="footer__logo" width="183" height="47">
                 <div class="footer__socials-list">
                     <div class="footer__socials-item">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M34.269 5.81333C30.5076 2.06667 25.507 0.00166667 20.1798 0C9.20219 0 0.267708 8.89 0.262684 19.82C0.261009 23.3133 1.17874 26.7233 2.92209 29.73L0.0952148 40L10.6525 37.2433C13.5614 38.8233 16.8371 39.655 20.1697 39.6567H20.1781C31.154 39.6567 40.0902 30.765 40.0952 19.835C40.0986 14.54 38.0286 9.55833 34.269 5.81333ZM20.1798 36.3083H20.1731C17.2022 36.3083 14.2899 35.5133 11.7477 34.0117L11.1432 33.655L4.87813 35.29L6.55115 29.21L6.1576 28.5867C4.49965 25.9633 3.62546 22.9317 3.62714 19.82C3.63049 10.7367 11.0577 3.34667 20.1882 3.34667C24.6093 3.34667 28.7659 5.06333 31.8909 8.17667C35.0159 11.2917 36.7358 15.43 36.7341 19.8317C36.7291 28.9183 29.3035 36.3083 20.1798 36.3083ZM29.26 23.97C28.7626 23.7217 26.3159 22.5233 25.8587 22.3583C25.4031 22.1933 25.0716 22.11 24.7383 22.605C24.405 23.1 23.4538 24.2167 23.1624 24.5483C22.8727 24.8783 22.5813 24.92 22.0839 24.6717C21.5865 24.4233 19.9822 23.9017 18.0814 22.2133C16.6026 20.9 15.6029 19.2783 15.3131 18.7817C15.0234 18.285 15.283 18.0183 15.5308 17.7717C15.7553 17.55 16.0282 17.1933 16.2778 16.9033C16.529 16.6167 16.611 16.41 16.7785 16.0783C16.9443 15.7483 16.8622 15.4583 16.7366 15.21C16.611 14.9633 15.6163 12.525 15.2026 11.5333C14.799 10.5667 14.3887 10.6983 14.0822 10.6833C13.7925 10.6683 13.4609 10.6667 13.1277 10.6667C12.7961 10.6667 12.2568 10.79 11.8013 11.2867C11.3458 11.7833 10.0596 12.9817 10.0596 15.4183C10.0596 17.8567 11.8432 20.2117 12.091 20.5417C12.3389 20.8717 15.5995 25.875 20.5918 28.02C21.7791 28.53 22.7069 28.835 23.4287 29.0633C24.6211 29.44 25.7063 29.3867 26.5637 29.26C27.52 29.1183 29.5078 28.0617 29.9231 26.905C30.3385 25.7483 30.3385 24.755 30.2129 24.55C30.0889 24.3417 29.7573 24.2183 29.26 23.97Z" fill="#1F1F1F"/>
-                        </svg>
-                    </div>
-                    <div class="footer__socials-item">
-                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path opacity="0.6" fill-rule="evenodd" clip-rule="evenodd" d="M20 0C8.955 0 0 8.955 0 20C0 31.045 8.955 40 20 40C31.045 40 40 31.045 40 20C40 8.955 31.045 0 20 0ZM29.27 13.6017C28.97 16.7633 27.6667 24.4383 27.005 27.98C26.725 29.48 26.1717 29.9817 25.6383 30.03C24.4767 30.1367 23.595 29.2617 22.47 28.525C20.71 27.3717 19.715 26.6533 18.0067 25.5267C16.0317 24.225 17.3117 23.51 18.4367 22.3417C18.7317 22.035 23.8483 17.38 23.9483 16.9583C23.96 16.905 23.9733 16.7083 23.855 16.605C23.7367 16.5017 23.565 16.5367 23.4417 16.565C23.265 16.605 20.4533 18.4633 15.005 22.14C14.2067 22.6883 13.4833 22.955 12.835 22.9417C12.1217 22.9267 10.7483 22.5383 9.72667 22.205C8.475 21.7983 7.47833 21.5817 7.565 20.8917C7.61 20.5317 8.105 20.1633 9.05167 19.7867C14.8817 17.2467 18.77 15.5717 20.715 14.7617C26.27 12.4517 27.4233 12.05 28.1767 12.0367C29.12 12.0233 29.3467 12.8017 29.27 13.6017Z" fill="#1F1F1F"/>
-                        </svg>
+                        <a href="https://api.whatsapp.com/send?phone=79090196909" target="_blank">
+                            <img src="./img/whatsapp.svg" height="=40" width="40" alt="whatsapp">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -293,7 +290,7 @@
                     </li>
                     <li class="footer__contacts-item header__footer-item--phone">
                         <svg fill="none" height="18" viewBox="0 0 18 18" width="18" xmlns="http://www.w3.org/2000/svg"><path d="m17.4375 12.9375s-3.6-2.5875-4.6125-2.475c-.45.1125-.7875.45-1.2375 1.0125-.1125.1125-.3375.3375-.45.5625-.3375-.1125-.675-.225-1.0125-.45-1.6875-.675-3.0375-2.025-3.825-3.7125-.1125-.3375-.3375-.675-.45-1.0125.225-.1125.45-.3375.5625-.45.675-.45 1.0125-.7875 1.0125-1.2375.225-1.0125-2.3625-4.6125-2.475-4.6125-.1125-.3375-.5625-.5625-.9-.5625-1.125 0-4.05 3.825-4.05 4.5 0 0 0 3.825 4.8375 8.6625 4.725 4.8375 8.6625 4.8375 8.6625 4.8375.675 0 4.5-2.925 4.5-4.05 0-.3375-.225-.7875-.5625-1.0125z" fill="#bcc9da"/></svg>
-                        <a class="footer__contacts-link" href="tel:+79193828619">+7 919 382 8619</a>
+                        <a class="footer__contacts-link" href="tel:+79193828619">+7 912 691 6662</a>
                     </li>
                     <li class="footer__contacts-item">
                         Адрес: г. Екатеринбург, ул. Карьерная, 24, оф. 5 
@@ -338,9 +335,9 @@
                 <span class="modal__description">Выберите тип груза</span>
                 <input class="modal__input modal__input--cargo" name="cargo" list="cargo" type="text" placeholder="Груз">
                 <span class="modal__description">Личная информация</span>
-                <input class="modal__input modal__input--name" name="name" type="text" placeholder="Имя">
-                <input class="modal__input modal__input--phone" name="tel" type="tel" placeholder="Телефон">
-                <input class="modal__input modal__input--mail" name="email" type="email" placeholder="E-mail">
+                <input class="modal__input modal__input--name" name="name" type="text" placeholder="Имя" maxlength="50" required>
+                <input class="modal__input modal__input--phone" name="tel" type="tel" placeholder="Телефон" pattern="\+?[0-9\s\-\(\)]+" maxlength="20" required>
+                <input class="modal__input modal__input--mail" name="email" type="email" maxlength="50" placeholder="E-mail">
                 <button class="modal__button" type="submit">Отправить заявку на расчет</button>
                 <datalist id="cities">
                     <option value="Тюмень">

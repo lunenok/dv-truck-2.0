@@ -8,6 +8,7 @@
     @media (min-width: $md-resolution) {
         margin-bottom: 160px;
     }
+    @include wrapper-margin-bottom();
 }
 
 .benefits__title {

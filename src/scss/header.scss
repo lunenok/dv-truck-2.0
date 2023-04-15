@@ -147,31 +147,29 @@
         padding: 0;
         margin: 0;
         margin-left: 40px;
-        font-family: 'Rubik';
-        font-style: normal;
         font-weight: 400;
         font-size: 16px;
-        line-height: 120%;
         color: $black;
     }
 }
 
-.header__item--button {
+.header__button--request {
     @include button();
+    width: 100%;
     background: $lite-gradient;
     font-family: 'Rubik';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     line-height: 110%;
     @media (min-width: $md-resolution) {
-        padding: 16px 32px;
         width: 200px;
         height: 50px;
         background: $purple-regular;
         color: $white;
         &:hover, &:focus {
             background: $purple-dark;
+            text-decoration: none;
         }
     }
 }

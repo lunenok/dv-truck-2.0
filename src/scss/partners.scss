@@ -1,7 +1,8 @@
 @import './variables.scss';
 
 .partners__wrapper {
-    @include container-padding()
+    @include container-padding();
+    @include wrapper-margin-bottom();
 }
 
 .partners__title {

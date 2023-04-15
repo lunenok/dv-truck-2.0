@@ -2,7 +2,9 @@
 
 .solution__wrapper {
     @include container-padding();
-    margin-bottom: 60px;
+    margin: 0 auto;
+    @include wrapper-margin-bottom();
+    max-width: 1560px;
 }
 
 .solution__list {

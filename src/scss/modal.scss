@@ -109,21 +109,35 @@
     position: relative;
     display: block;
     margin-left: auto;
-    width: 18px;
-    height: 2px;
+    width: 20px;
+    height: 20px;
     border: none;
-    background: $black;
-    transform: rotate(45deg);
+    background: inherit;
+    // transform: rotate(45deg);
     &::after {
         position: absolute;
         content: '';
         display: block;
-        top: 0;
-        left: 0;
+        top: 11px;
+        left: 3px;
         width: 18px;
         height: 2px;
         background: $black;
-        transform: rotate(90deg);
+        transform: rotate(45deg);
+    }
+    &::before {
+        position: absolute;
+        content: '';
+        display: block;
+        top: 11px;
+        left: 3px;
+        width: 18px;
+        height: 2px;
+        background: $black;
+        transform: rotate(135deg);
+    }
+    &:hover, &:focus {
+        opacity: 0.5;
     }
 }
 
