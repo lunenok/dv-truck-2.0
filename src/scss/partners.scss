@@ -1,7 +1,15 @@
 @import './variables.scss';
 
 .partners__wrapper {
-    @include container-padding();
+    width: 89%;
+    max-width: 900px;
+    margin: 0 auto;
+    @media (min-width: $sm-resolution) {
+        width: 94%;
+    }
+    @media (min-width: $xl-resoluiton) {
+        width: 96%;
+    }
     @include wrapper-margin-bottom();
 }
 
@@ -10,6 +18,9 @@
     margin: 0 auto;
     margin-bottom: 24px;
     width: 210px;
+    @media (min-width: $md-resolution) {
+        width: 400px;
+    }
 }
 
 .partners__description {
@@ -17,7 +28,7 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 40px;
-    max-width: 310px;
+    max-width: 94%;
     opacity: 0.6;
 }
 

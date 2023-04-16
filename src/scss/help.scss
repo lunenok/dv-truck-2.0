@@ -1,31 +1,25 @@
 @import './variables.scss';
 
-.help__container {
-    @media (min-width: $sm-resolution) {
-        padding: 0 3%;
-    }
-    @media (min-width: $lg-resolution) {
-        padding: 0 4%;
-    }
-}
-
 .help__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
     padding: 80px 5%;
+    width: 100%;
     background: linear-gradient(79.63deg, #16153A 1.08%, #7E488C 100%);
     @media (min-width: $sm-resolution) {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 60px 8%;
+        width: 94%;
         border-radius: 30px;
     }
     @media (min-width: $lg-resolution) {
         margin-bottom: 160px;
         padding: 68px 17%;
+        width: 92%;
     }
     @media (min-width: $xl-resoluiton) {
         max-width: 1560px;
@@ -91,6 +85,9 @@
     width: 100%;
     max-width: 320px;
     @include button();
+    @media (min-width: $sm-resolution) {
+        margin-right: auto;
+    }
     &:hover, &:focus {
         background: $white-gradient;
         box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.25);

@@ -10,10 +10,14 @@
         justify-content: space-between;
         width: 94%;
     }
+    @media (min-width: $lg-resolution) {
+        width: 92%;
+    }
 }
 
 .footer__logo {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    transform: translate(-10px,-10px);
 }
 
 .footer__socials-container {

@@ -1,23 +1,17 @@
 @import 'variables.scss';
 
-.promo__container {
-    max-width: 1560px;
-    margin: 0 auto;
-}
-
 .promo__wrapper {
-    margin-bottom: 132px;
     padding-top: 80px;
     @include wrapper-margin-bottom();
     background: url('./../img/bg-promo-mb.png') top right no-repeat, $linear-purple;
-
     @media (min-width: $sm-resolution) {
         display: flex;
         justify-content: space-between;
         align-items: top;
         padding: 0 8%;
         padding-top: 70px;
-        margin: 0 3%;
+        margin: 0 auto;
+        width: 96%;
         border-radius: 22px;
         background: url('./../img/bg-promo-sm.png') bottom left no-repeat, $linear-purple;
     }
@@ -25,10 +19,12 @@
         align-items: top;
         padding: 0 6%;
         padding-top: 105px;
-        margin: 0 4%;
+        width: 92%;
         border-radius: 30px;
     }
     @media (min-width: $lg-resolution) {
+        max-width: 1560px;
+        margin: 0 auto;
         padding-top: 140px;
         background: url('./../img/bg-promo-lg.png') bottom left no-repeat, $linear-purple;
     }
@@ -36,6 +32,7 @@
         background: url('./../img/bg-promo-xl.png') bottom left no-repeat, $linear-purple;
     }
     @include wrapper-margin-bottom();
+    margin-bottom: 118px;
 }
 
 .promo__about-container {

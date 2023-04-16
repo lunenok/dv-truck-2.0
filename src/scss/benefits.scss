@@ -1,12 +1,21 @@
 @import './variables.scss';
 
 .benefits__wrapper {
-    @include container-padding();
     margin: 0 auto;
+    width: 89%;
     max-width: 1324px;
     margin-bottom: 100px;
+    @media (min-width: $sm-resolution) {
+        width: 94%
+    }
     @media (min-width: $md-resolution) {
         margin-bottom: 160px;
+    }
+    @media (min-width: $lg-resolution) {
+        width: 92%
+    }
+    @media (min-width: $xl-resoluiton) {
+        max-width: 1324px;
     }
     @include wrapper-margin-bottom();
 }

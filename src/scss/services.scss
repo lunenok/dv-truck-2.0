@@ -1,15 +1,17 @@
 @import './variables.scss';
 
 .services__wrapper {
-    padding: 0 5%;
+    width: 89%;
     margin-bottom: 100px;
+    max-width: 1324px;
+    margin: 0 auto;
     @media (min-width: $sm-resolution) {
-        padding: 0 3%;
+        width: 94%;
     }
-    @media (min-width: $md-resolution) {
-        padding: 0 4%;
+    @media (min-width: $xl-resoluiton) {
+        width: 92%;
     }
-    @include wrapper-margin-bottom()
+    @include wrapper-margin-bottom();
 }
 
 .services__title {
@@ -30,7 +32,7 @@
         margin-bottom: 64px;
     }
     @media (min-width: $xl-resoluiton) {
-        max-width: 1324px;
+
     }
 }
 

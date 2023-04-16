@@ -1,6 +1,15 @@
 @import './variables.scss';
 
 .about__wrapper {
+    max-width: 1120px;
+    @media (min-width: $sm-resolution) {
+        margin: 0 auto;
+        width: 79%;
+    }
+    @media (min-width: $xl-resoluiton) {
+        margin: 0 auto;
+        max-width: 1120px;
+    }
     @include wrapper-margin-bottom();
 }
 
@@ -17,15 +26,13 @@
     flex-direction: column;
     @media (min-width: $sm-resolution) {
         flex-direction: row;
-        justify-content: space-around;
-        margin: 0 auto;
-        padding: 0 7%;
+        justify-content: space-between;
     }
     @media (min-width: $lg-resolution) {
-        padding: 0 14%;
+        // padding: 0 14%;
     }
     @media (min-width: $xl-resoluiton) {
-        padding: 0 17%;
+        // padding: 0 17%;
     }
 }
 
@@ -43,6 +50,22 @@
     }
     &:last-child {
         margin-bottom: 0;
+    }
+    &--age {
+        @media (min-width: $sm-resolution) {
+            width: 155px;
+        }
+        @media (min-width: $lg-resolution) {
+            width: 195px;
+        }
+    }
+    &--count {
+        @media (min-width: $sm-resolution) {
+            width: 135px;
+        }
+        @media (min-width: $lg-resolution) {
+            width: 190px;
+        }
     }
 }
 
@@ -77,10 +100,14 @@
             opacity: 0.7;
             z-index: -1;
             @media (min-width: $sm-resolution) {
+                top: -45px;
+                left: 15px;            
                 width: 98px;
                 height: 92px;
             }
             @media (min-width: $lg-resolution) {
+                top: -51px;
+                left: -43px;
                 width: 136px;
                 height: 129px;
             }
@@ -100,10 +127,14 @@
             opacity: 0.5;
             z-index: -1;
             @media (min-width: $sm-resolution) {
+                top: -45px;
+                left: 27px;
                 width: 110px;
                 height: 94px;
             }
             @media (min-width: $lg-resolution) {
+                top: -59px;
+                left: -17px;
                 width: 159px;
                 height: 157px;
             }
@@ -123,10 +154,14 @@
             opacity: 0.7;
             z-index: -1;
             @media (min-width: $sm-resolution) {
+                top: -59px;
+                left: -26px;
                 width: 128px;
                 height: 126px;
             }
             @media (min-width: $lg-resolution) {
+                top: -64px;
+                left: -63px;
                 width: 159px;
                 height: 157px;
             }
