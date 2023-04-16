@@ -52,7 +52,7 @@ const popupButtons = [requestButton, promoButton, serviceButton, helpButton, off
 const shadowBox = document.querySelector('.modal__shadow');
 const popup = document.querySelector('.modal__container');
 const popupForm = popup.querySelector('.modal__form');
-const popupCloseButton = document.querySelector('.modal__close-button');
+const popupCloseButton = popup.querySelector('.modal__close-button');
 
 const onPopupEscPress = (evt) => {
     if (evt.key === 'Escape') {
@@ -73,6 +73,7 @@ const openPopup = () => {
 const closePopup = () => {
     popup.classList.remove('modal__container--active');
     shadowBox.classList.remove('modal__shadow--active');
+    popupForm.reset();
     document.removeEventListener('keydown', onPopupEscPress);
 };
 
@@ -125,3 +126,14 @@ const closeThanksPopup = () => {
 };
 
 thanksPopupCloseButton.addEventListener('click', closeThanksPopup);
+
+// feedback form
+
+const feedbackForm = document.querySelector('.feedback__form');
+
+feedbackForm.addEventListener('submit', (evt) => {
+    evt.preventDefault();
+    getDataFromForm(feedbackForm);
+    feedbackForm.reset();
+    openThanksPopup();
+});

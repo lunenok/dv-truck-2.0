@@ -238,13 +238,13 @@
                     <span class="feedback__description">
                         Оставьте заявку и мы перезвоним!
                     </span>
-                    <form class="feedback__form" action="submit">
-                        <input class="feedback__input feedback__input--name" type="text" placeholder="Имя" maxlength="50" required>
-                        <input class="feedback__input feedback__input--phone" type="tel" placeholder="Телефон" maxlength="20" pattern="\+?[0-9\s\-\(\)]+" required>
-                        <input class="feedback__input feedback__input--mail" type="email" placeholder="E-mail" maxlength="50">
-                        <button class="feedback__button">Отправить</button>
+                    <form class="feedback__form" id="feedback-form" method="post">
+                        <input class="feedback__input feedback__input--name" name="name" type="text" placeholder="Имя" maxlength="50" required>
+                        <input class="feedback__input feedback__input--phone" name="tel" type="tel" placeholder="Телефон" maxlength="20" pattern="\+?[0-9\s\-\(\)]+" required>
+                        <input class="feedback__input feedback__input--mail" name="email" type="email" placeholder="E-mail" maxlength="50">
+                        <button class="feedback__button" type="submit">Отправить</button>
                         <label class="feedback__label">
-                            <input type="checkbox" class="feedback__terms" required>
+                            <input type="checkbox" class="feedback__terms" name="terms" required>
                             Соглашаюсь с <a href="#">условиями передачи данных</a>
                         </label>
                     </form>
@@ -314,7 +314,7 @@
         <div class="modal__wrapper">
             <button class="modal__close-button"></button>
             <h2 class="modal__title">Рассчитать стоимость</h2>
-            <form class="modal__form" id="popup-form" method="post">
+            <form class="modal__form" id="modal-form" method="post">
                 <span class="modal__description">Выберите страну отправки</span>
                 <div class="modal__checkbox-container">
                     <label class="modal__checkbox-label">
