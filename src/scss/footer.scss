@@ -42,9 +42,21 @@
     @include body();
     margin-bottom: 16px;
     text-align: left;
+}
+
+.footer__nav-link {
+    color: $black;
     opacity: 0.6;
+    text-decoration: none;
     &:hover, &:focus {
         text-decoration: underline;
+    }
+    &--disabled {
+        opacity: 0.4;
+        &:hover, &:focus {
+            cursor: default;
+            text-decoration: none;
+        }
     }
 }
 

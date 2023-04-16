@@ -15,10 +15,18 @@
             <nav class="header__nav header__nav--close">
                 <ul class="header__list">
                     <div class="header__menu-list-container">
-                        <li class="header__item">Доставка</li>
-                        <li class="header__item">О нас</li>
-                        <li class="header__item">Контакты</li>
-                        <li class="header__item">Отследить заказ</li>
+                        <li class="header__item">
+                            <a class="header__item-link" href="#promo">Доставка</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__item-link" href="#about">О нас</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__item-link" href="#contacts">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__item-link header__item-link--disabled" >Отследить заказ</a>
+                        </li>
                     </div>
                     <div class="header__menu-button-container">
                         <li class="header__item header__item--button">
@@ -41,7 +49,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="promo__container">
+        <section class="promo__container" id="promo">
             <h1 class="title visually-hidden">Dolce Vita truck международная доставка цветов</h1>
             <div class="promo__wrapper">
                 <div class="promo__about-container">
@@ -91,7 +99,7 @@
                 <button class="services__button">Начать с выбора поставщиков</button>
             </div>
         </section>
-        <section class="about__wrapper">
+        <section class="about__wrapper" id="about">
             <h2 class="about__title">
                 О нас
             </h2>
@@ -267,20 +275,20 @@
             <div class="footer__nav-container">
                 <ul class="footer__nav-list">
                     <li class="footer__nav-item">
-                        <a class="footer__nav-link">О нас</a>
+                        <a class="footer__nav-link" href="#promo">Доставка</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a class="footer__nav-link">Доставка</a>
+                        <a class="footer__nav-link" href="#about">О нас</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a class="footer__nav-link">Контакты</a>
+                        <a class="footer__nav-link" href="#contacts">Контакты</a>
                     </li>
                     <li class="footer__nav-item">
-                        <a class="footer__nav-link">Отследить заказ</a>
+                        <a class="footer__nav-link footer__nav-link--disabled">Отследить заказ</a>
                     </li>
                 </ul>
             </div>
-            <div class="footer__contacts-container">
+            <div class="footer__contacts-container" id="contacts">
                 <ul class="footer__contacts-list">
                     <li class="footer__contacts-item header__footer-item--email">
                         <svg width="18" height="13" viewBox="0 0 18 13" fill="none" xmlns="http://www.w3.org/2000/svg">

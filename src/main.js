@@ -3,21 +3,44 @@
 //menu
 const menuButton = document.querySelector('.header__button');
 const nav = document.querySelector('.header__nav');
+const menuLink = document.querySelectorAll('.header__item-link');
 const mailHtml = document.querySelector('html');
+const ESC_KEYCODE = 27
+
+const onMenuEscPress = (evt) => {
+    if (evt.key === 'Escape') {
+        closeMenu();
+        document.removeEventListener('keydown', onMenuEscPress);
+    };
+};
+
+const openMenu = () => {
+    nav.classList.remove('header__nav--close');
+    nav.classList.add('header__nav--open');
+    mailHtml.classList.add('hystmodal__opened');
+    document.addEventListener('keydown', onMenuEscPress);
+};
+
+const closeMenu = () => {
+    nav.classList.remove('header__nav--open');
+    nav.classList.add('header__nav--close');
+    mailHtml.classList.remove('hystmodal__opened');
+    document.removeEventListener('keydown', onMenuEscPress);
+};
 
 const menuButtonHandler = () => {
     if (nav.classList.contains('header__nav--close')) {
-        nav.classList.remove('header__nav--close');
-        nav.classList.add('header__nav--open');
-        mailHtml.classList.add('hystmodal__opened')
+        openMenu();
     } else {
-        nav.classList.remove('header__nav--open');
-        nav.classList.add('header__nav--close');
-        mailHtml.classList.remove('hystmodal__opened');
+        closeMenu();
     };
 };
 
 menuButton.addEventListener('click', menuButtonHandler);
+
+menuLink.forEach((link) => {
+    link.addEventListener('click', menuButtonHandler);
+});
 
 //popup
 const requestButton = document.querySelector('.header__item--button');
@@ -31,16 +54,25 @@ const popup = document.querySelector('.modal__container');
 const popupForm = popup.querySelector('.modal__form');
 const popupCloseButton = document.querySelector('.modal__close-button');
 
+const onPopupEscPress = (evt) => {
+    if (evt.key === 'Escape') {
+        closePopup();
+        document.removeEventListener('keydown', onPopupEscPress);
+    }
+}
+
 const openPopup = () => {
     if (!popup.classList.contains('modal__container--active')) {
         popup.classList.add('modal__container--active');
         shadowBox.classList.add('modal__shadow--active');
+        document.addEventListener('keydown', onPopupEscPress);
     }
 };
 
 const closePopup = () => {
     popup.classList.remove('modal__container--active');
-    shadowBox.classList.remove('modal__shadow--active')
+    shadowBox.classList.remove('modal__shadow--active');
+    document.removeEventListener('keydown', onPopupEscPress);
 };
 
 for (var i = 0; i < popupButtons.length; i++) {
