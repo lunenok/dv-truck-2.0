@@ -66,6 +66,7 @@ const openPopup = () => {
         popup.classList.add('modal__container--active');
         shadowBox.classList.add('modal__shadow--active');
         document.addEventListener('keydown', onPopupEscPress);
+        closeMenu();
     }
 };
 
@@ -93,4 +94,34 @@ const getDataFromForm = (formNode) => {
 popupForm.addEventListener('submit', (evt) => {
     evt.preventDefault();
     getDataFromForm(popupForm);
+    closePopup();
+    openThanksPopup();
 })
+
+//thanks popup
+
+const thanksPopup = document.querySelector('.thanks__container');
+const thanksPopupCloseButton = thanksPopup.querySelector('.thanks__close-button');
+
+const onThanksEscPress = (evt) => {
+    if (evt.key === 'Escape') {
+        closeThanksPopup();
+        document.removeEventListener('keydown', onMenuEscPress);
+    };
+};
+
+const openThanksPopup = () => {
+    if (!thanksPopup.classList.contains('thanks__container--active')) {
+        thanksPopup.classList.add('thanks__container--active');
+        shadowBox.classList.add('modal__shadow--active');
+        document.addEventListener('keydown', onThanksEscPress);
+    }
+};
+
+const closeThanksPopup = () => {
+    thanksPopup.classList.remove('thanks__container--active');
+    shadowBox.classList.remove('modal__shadow--active');
+    document.removeEventListener('keydown', onThanksEscPress);
+};
+
+thanksPopupCloseButton.addEventListener('click', closeThanksPopup);
