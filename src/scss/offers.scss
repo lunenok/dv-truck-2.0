@@ -49,7 +49,8 @@
 .offers__title {
     @include subtitle();
     margin-bottom: 24px;
-    width: 325px;
+    width: 89%;
+    max-width: 325px;
     color: $white;
     @media (min-width: $sm-resolution) {
         text-align: left;

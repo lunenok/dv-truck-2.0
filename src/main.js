@@ -66,6 +66,7 @@ const openPopup = () => {
         popup.classList.add('modal__container--active');
         shadowBox.classList.add('modal__shadow--active');
         document.addEventListener('keydown', onPopupEscPress);
+        mailHtml.classList.add('hystmodal__opened');
         closeMenu();
     }
 };
@@ -74,6 +75,7 @@ const closePopup = () => {
     popup.classList.remove('modal__container--active');
     shadowBox.classList.remove('modal__shadow--active');
     popupForm.reset();
+    mailHtml.classList.remove('hystmodal__opened');
     document.removeEventListener('keydown', onPopupEscPress);
 };
 
@@ -115,6 +117,7 @@ const openThanksPopup = () => {
     if (!thanksPopup.classList.contains('thanks__container--active')) {
         thanksPopup.classList.add('thanks__container--active');
         shadowBox.classList.add('modal__shadow--active');
+        mailHtml.classList.add('hystmodal__opened');
         document.addEventListener('keydown', onThanksEscPress);
     }
 };
@@ -122,6 +125,7 @@ const openThanksPopup = () => {
 const closeThanksPopup = () => {
     thanksPopup.classList.remove('thanks__container--active');
     shadowBox.classList.remove('modal__shadow--active');
+    mailHtml.classList.remove('hystmodal__opened');
     document.removeEventListener('keydown', onThanksEscPress);
 };
 

@@ -11,7 +11,9 @@
     <header class="header__container">
         <div class="header__wrapper">
             <img class="header__logo" src="./img/logo.png" width="156" height="40" alt="logo">
-            <button class="header__button"></button>
+            <button class="header__button">
+                <svg fill="none" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g fill="#1f1f1f"><rect height="2" rx=".5" width="16" x="4" y="5"/><rect height="2" rx=".5" width="16" x="4" y="11"/><rect height="2" rx=".5" width="13" x="4" y="17"/></g></svg>
+            </button>
             <nav class="header__nav header__nav--close">
                 <ul class="header__list">
                     <div class="header__menu-list-container">
@@ -193,7 +195,7 @@
             <div class="offers__wrapper">
                 <div class="offers__main-container">
                     <h2 class="offers__title">
-                        Не нашли интересующую вас плантацию в списке?
+                        Не нашли интересующую вас компанию в списке?
                     </h2>
                     <span class="offers__description">
                         Мы готовы предложить индивидуальные решения для каждого клиента, чтобы обеспечить максимальную гибкость и удобство в сотрудничестве. Оставьте заявку и наш менеджер свяжется с вами.
@@ -251,9 +253,9 @@
                 </div>
                 <div class="feedback__img-container">
                     <picture>
-                        <source media="(min-width: 1920px)" srcset="./img/card/truck-xl.png">
-                        <source media="(min-width: 992px)" srcset="./img/card/truck-lg.png">
-                        <source media="(min-width: 768px)" srcset="./img/card/truck-md.png">
+                        <source media="(min-width: 992px)" srcset="./img/truck-lg.png">
+                        <source media="(min-width: 768px)" srcset="./img/truck-md.png">
+                        <source media="(min-width: 1920px)" srcset="./img/truck-xl.png">
                         <img class="feedback__img" src="./img/truck-mb.png" alt="truck" width="360" height="277">
                     </picture>
                 </div>
@@ -339,29 +341,72 @@
                     </label>
                 </div>
                 <span class="modal__description">Выберите город прибытия</span>
-                <input class="modal__input modal__input--city" name="city" list="cities" type="text" placeholder="Город">
+                <select class="modal__input modal__input--city" name="city">
+                    <option value="Тюмень">Тюмень</option>
+                    <option value="Омск">Омск</option>
+                    <option value="Челябинск">Челябинск</option>
+                    <option value="Екатеринбург">Екатеринбург</option>
+                    <option value="Нижний Тагил">Нижний Тагил</option>
+                    <option value="Курган">Курган</option>
+                    <option value="Сургут">Сургут</option>
+                    <option value="другой">другой</option>
+                </select>
                 <span class="modal__description">Выберите тип груза</span>
-                <input class="modal__input modal__input--cargo" name="cargo" list="cargo" type="text" placeholder="Груз">
+                <select class="modal__input modal__input--cargo" name="cargo">
+                    <option value="P 100">P 100</option>
+                    <option value="P 160">P 160</option>
+                    <option value="LV 75 BB, C, LV5">LV 75 BB, C, LV5</option>
+                    <option value="AA/B20">AA/B20</option>
+                    <option value="G = 1,5 АА">G = 1,5 АА</option>
+                    <option value="LV 22">LV 22</option>
+                    <option value="LV 21">LV 21</option>
+                    <option value="LV 34, 36">LV 34, 36</option>
+                    <option value="LV 18">LV 18</option>
+                    <option value="LV 17">LV 17</option>
+                    <option value="LV 15">LV 15</option>
+                    <option value="LV 12">LV 12</option>
+                    <option value="LV 11">LV 11</option>
+                    <option value="LV 10">LV 10</option>
+                    <option value="LV 9">LV 9</option>
+                    <option value="LV 6">LV 6</option>
+                    <option value="LV 4">LV 4</option>
+                    <option value="ГЕРБЕРА mini, АМАРИЛИС">ГЕРБЕРА mini, АМАРИЛИС</option>
+                    <option value="ГЕРБЕРА сухая">ГЕРБЕРА сухая</option>
+                    <option value="ОРХИДЕЯ 100 cm">ОРХИДЕЯ 100 cm</option>
+                    <option value="ОРХИДЕЯ">ОРХИДЕЯ</option>
+                    <option value="Фаленопсис">Фаленопсис</option>
+                    <option value="ГЛОРИОЗА">ГЛОРИОЗА</option>
+                    <option value="СТРЕЛИЦИЯ">ГЛОРИОЗА</option>
+                    <option value="СТРЕЛИЦИЯ 0,5">СТРЕЛИЦИЯ 0,5</option>
+                    <option value="ВАНДА">ВАНДА</option>
+                    <option value="ВАНДА 2X">ВАНДА 2X</option>
+                    <option value="АНТУРИУМ">АНТУРИУМ</option>
+                    <option value="M 6 OVER">M 6 OVER</option>
+                    <option value="M 5 OVER">M 5 OVER</option>
+                    <option value="M 4 OVER">M 4 OVER</option>
+                    <option value="M 3 OVER">M 3 OVER</option>
+                    <option value="M 2 OVER">M 2 OVER</option>
+                    <option value="GB 6 OVER">GB 6 OVER</option>
+                    <option value="GB 5 OVER">GB 5 OVER</option>
+                    <option value="GB 4 OVER">GB 4 OVER</option>
+                    <option value="GB 3 OVER">GB 3 OVER</option>
+                    <option value="GB 2 OVER">GB 2 OVER</option>
+                    <option value="Гербера Аква">Гербера Аква</option>
+                    <option value="Гербера Аква Q box">Гербера Аква Q box</option>
+                    <option value="АКВАБОКС 50/60">АКВАБОКС 50/60</option>
+                    <option value="АКВАБОКС 70">АКВАБОКС 70</option>
+                    <option value="АКВАБОКС 80">АКВАБОКС 80</option>
+                    <option value="АКВАБОКС 90">АКВАБОКС 90</option>
+                    <option value="АКВАБОКС 100">АКВАБОКС 100</option>
+                    <option value="АКВАБОКС 110">АКВАБОКС 110</option>
+                    <option value="АКВАБОКС 120">АКВАБОКС 120</option>
+                    <option value="AA GREEN">AA GREEN</option>
+                </select>
                 <span class="modal__description">Личная информация</span>
                 <input class="modal__input modal__input--name" name="name" type="text" placeholder="Имя" maxlength="50" required>
                 <input class="modal__input modal__input--phone" name="tel" type="tel" placeholder="Телефон" pattern="\+?[0-9\s\-\(\)]+" maxlength="20" required>
                 <input class="modal__input modal__input--mail" name="email" type="email" maxlength="50" placeholder="E-mail">
                 <button class="modal__button" type="submit">Отправить заявку на расчет</button>
-                <datalist id="cities">
-                    <option value="Тюмень">
-                    <option value="Омск">
-                    <option value="Челябинск">
-                    <option value="Екатеринбург">
-                    <option value="Нижний Тагил">
-                    <option value="Курган">
-                    <option value="Сургут">
-                    <option value="другой">
-                </datalist>
-                <datalist id="cargo">
-                    <option value="P 100">
-                    <option value="P 160">
-                    <option value="LV 75 BB, C, LV5 ">
-                </datalist>
             </form>
         </div>
 

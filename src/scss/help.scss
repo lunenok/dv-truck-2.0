@@ -5,25 +5,19 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 80px 5%;
-    width: 100%;
+    padding: 80px 0;
     background: linear-gradient(79.63deg, #16153A 1.08%, #7E488C 100%);
     @media (min-width: $sm-resolution) {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
-        padding: 60px 8%;
         width: 94%;
         border-radius: 30px;
     }
     @media (min-width: $lg-resolution) {
         margin-bottom: 160px;
-        padding: 68px 17%;
-        width: 92%;
-    }
-    @media (min-width: $xl-resoluiton) {
         max-width: 1560px;
-        padding: 68px 17%;
+        width: 92%;
     }
     @include wrapper-margin-bottom()
 }
@@ -43,7 +37,7 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 24px;
-    width: 320px;
+    width: 89%;
     color: $white;
     @media (min-width: $sm-resolution) {
         margin-left: 0;
@@ -63,29 +57,31 @@
     display: block;
     margin: 0 auto;
     margin-bottom: 24px;
-    width: 320px;
+    width: 89%;
+    max-width: 320px;
     @include body();
     color: $white;
     @media (min-width: $sm-resolution) {
         margin-left: 0;
-        width: 310px;
+        max-width: 310px;
         text-align: left;
     }
     @media (min-width: $md-resolution) {
         margin-botton: 32px;
-        width: 385px;
+        max-width: 385px;
     }
     @media (min-width: $lg-resolution) {
-        width: 540px;
+        max-width: 540px;
     }
 }
 
 .help__button {
     margin: 0 auto;
-    width: 100%;
+    width: 89%;
     max-width: 320px;
     @include button();
     @media (min-width: $sm-resolution) {
+        margin: 0;
         margin-right: auto;
     }
     &:hover, &:focus {
@@ -95,6 +91,7 @@
 }
 
 .help__img-container {
+    margin-right: 54px;
     @media (min-width: $sm-resolution) {
         order: 1;
     }
