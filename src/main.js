@@ -6,6 +6,7 @@ const nav = document.querySelector('.header__nav');
 const menuLink = document.querySelectorAll('.header__item-link');
 const mailHtml = document.querySelector('html');
 const ESC_KEYCODE = 27
+const xhr = new XMLHttpRequest();
 
 const onMenuEscPress = (evt) => {
     if (evt.key === 'Escape') {
@@ -97,6 +98,8 @@ const getDataFromForm = (formNode) => {
 popupForm.addEventListener('submit', (evt) => {
     evt.preventDefault();
     getDataFromForm(popupForm);
+    xhr.open('POST', './mail.php');
+    xhr.send();
     closePopup();
     openThanksPopup();
 })
